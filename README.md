@@ -1,4 +1,4 @@
-# Sample Android TV Channel App (TV Input) using TIF
+# Hello Mono
 
 This app is designed to show how to build live TV channel apps for
 Android TV using the TV Input Framework (TIF). The sample is a service
