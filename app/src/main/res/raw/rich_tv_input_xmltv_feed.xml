@@ -52,7 +52,7 @@ contents. For details, please see the documentation of XmlTvParser class.
     <channel id="com.example.android.sampletvinput.4" repeat-programs="true">
         <display-name>ABP HINDI</display-name>
         <display-number>4</display-number>
-        <icon src="http://storage.googleapis.com/android-tv/images/hls.png"/>
+<!--        <icon src="http://storage.googleapis.com/android-tv/images/hls.png"/>-->
 
         <!--        App link for channel 3-->
         <app-link color="#4caf50"
@@ -67,7 +67,7 @@ contents. For details, please see the documentation of XmlTvParser class.
     <channel id="com.example.android.sampletvinput.5" repeat-programs="true">
         <display-name>ABP Ananda</display-name>
         <display-number>5</display-number>
-        <icon src="http://storage.googleapis.com/android-tv/images/hls.png"/>
+<!--        <icon src="http://storage.googleapis.com/android-tv/images/hls.png"/>-->
 
         <!--        App link for channel 3-->
         <app-link color="#4caf50"
@@ -108,7 +108,7 @@ contents. For details, please see the documentation of XmlTvParser class.
     <channel id="com.example.android.sampletvinput.6" repeat-programs="true">
         <display-name>ABP Majha</display-name>
         <display-number>6</display-number>
-        <icon src="http://storage.googleapis.com/android-tv/images/hls.png"/>
+<!--        <icon src="http://storage.googleapis.com/android-tv/images/hls.png"/>-->
 
         <!--        App link for channel 6-->
         <app-link color="#4caf50"
@@ -149,7 +149,7 @@ contents. For details, please see the documentation of XmlTvParser class.
     <channel id="com.example.android.sampletvinput.7" repeat-programs="true">
         <display-name>ABP Asmita</display-name>
         <display-number>7</display-number>
-        <icon src="http://storage.googleapis.com/android-tv/images/hls.png"/>
+<!--        <icon src="http://storage.googleapis.com/android-tv/images/hls.png"/>-->
 
         <!--        App link for channel 7-->
         <app-link color="#4caf50"
@@ -191,7 +191,7 @@ contents. For details, please see the documentation of XmlTvParser class.
     <channel id="com.example.android.sampletvinput.8" repeat-programs="true">
         <display-name>ABP Sanjha</display-name>
         <display-number>8</display-number>
-        <icon src="http://storage.googleapis.com/android-tv/images/hls.png"/>
+<!--        <icon src="http://storage.googleapis.com/android-tv/images/hls.png"/>-->
 
         <!--        App link for channel 8-->
         <app-link color="#4caf50"
@@ -232,7 +232,7 @@ contents. For details, please see the documentation of XmlTvParser class.
     <channel id="com.example.android.sampletvinput.9" repeat-programs="true">
         <display-name>ABP Ganga</display-name>
         <display-number>9</display-number>
-        <icon src="http://storage.googleapis.com/android-tv/images/hls.png"/>
+<!--        <icon src="http://storage.googleapis.com/android-tv/images/hls.png"/>-->
 
         <!--        App link for channel 9-->
         <app-link color="#4caf50"
@@ -270,6 +270,48 @@ contents. For details, please see the documentation of XmlTvParser class.
         </advertisement>
     </programme>
 
+<!--    This is for Bloomberg-->
+    <!--Creating channel 10 HLS type ABP Ganga-->
+    <channel id="com.example.android.sampletvinput.10" repeat-programs="true">
+        <display-name>Bloomberg Quint</display-name>
+        <display-number>10</display-number>
+        <!--        <icon src="http://storage.googleapis.com/android-tv/images/hls.png"/>-->
+
+        <!--        App link for channel 10-->
+        <app-link color="#4caf50"
+            intent-uri="intent:#Intent;component=com.example.android.sampletvinput/.rich.RichAppLinkSidePanelActivity;S.display-number=10;end"
+            poster-uri="android.resource://com.example.android.sampletvinput/drawable/companyposter"
+            text="Bloomberg">
+            <icon src="https://storage.googleapis.com/android-tv/images/hls.png"/>
+        </app-link>
+    </channel>
+
+    <programme
+        channel="com.example.android.sampletvinput.10"
+        start="20150817000000 +0000"
+        stop="20150817003020 +0000"
+        video-src="https://d11s4g6fjkwvel.cloudfront.net/out/v1/6008c8c2598e47c197d5473f184669a8/bquint.m3u8"
+        video-type="HLS">
+        <title>LIVE</title>
+        <desc>BloombergQuint is an Indian business and financial news organization, a joint venture of Bloomberg News and Quintillion Media.</desc>
+        <category>NEWS</category>
+        <icon src="drawable/contentposter.png"/>
+        <rating system="com.android.tv">
+            <value>com.android.tv/US_TV/US_TV_G</value>
+        </rating>
+        <advertisement
+            start="20150817000010 +0000"
+            stop="20150817000020 +0000"
+            type="VAST">
+            <request-url><![CDATA[https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/124319096/external/single_ad_samples&ciu_szs=300x250&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&cust_params=deployment%3Ddevsite%26sample_ct%3Dlinear&correlator=]]></request-url>
+        </advertisement>
+        <advertisement
+            start="20150817000030 +0000"
+            stop="20150817000040 +0000"
+            type="VAST">
+            <request-url><![CDATA[https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/124319096/external/single_ad_samples&ciu_szs=300x250&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&cust_params=deployment%3Ddevsite%26sample_ct%3Dredirectlinear&correlator=]]></request-url>
+        </advertisement>
+    </programme>
 
 
 
